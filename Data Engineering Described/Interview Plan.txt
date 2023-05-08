@@ -1,0 +1,143 @@
+An internal-facing data engineer typically focuses on activities crucial to the needs of the business and internal stakeholders (Figure 1-11). Examples include creating and maintaining data pipelines and data warehouses for BI dashboards, reports, 
+business processes, data science, and ML models.
+Data engineers work to provide the data automation and scale that make data science more efficient.
+Data engineers now participate in strategic planning and lead key initiatives that extend beyond the boundaries of IT. Data engineers often support by acting as the glue between the business and data architecture/science/analytics.
+Project managers must filter a long list of requests and prioritize critical deliverables to keep projects on track and better serve the company.
+Data engineers interact with various managers beyond project and product managers. Data engineers either serve a variety of incoming requests as a centralized team or work as a resource assigned to a particular manager, project, or product.
+The data engineer needs to have a working understanding of the way source systems work, the way they generate data, the frequency and velocity of the data, and the variety of data they generate.
+
+
+Data Maturity and the Data Engineer
+
+
+Stage 1: Starting with data
+A company getting started with data is, by definition, in the very early stages of its data maturity. The company may have fuzzy, loosely defined goals or no goals. Data architecture and infrastructure are in the very early stages of planning and development. Adoption and utilization are likely low or nonexistent. The data team is small, often with a headcount in the single digits. At this stage, a data engineer is usually a generalist and will typically play several other roles, such as data scientist or software engineer. A data engineer’s goal is to move fast, get traction, and add value.
+
+The practicalities of getting value from data are typically poorly understood, but the desire exists. Reports or analyses lack formal structure, and most requests for data are ad hoc. While it’s tempting to jump headfirst into ML at this stage, we don’t recommend it. We’ve seen countless data teams get stuck and fall short when they try to jump to ML without building a solid data foundation.
+
+That’s not to say you can’t get wins from ML at this stage—it is rare but possible. Without a solid data foundation, you likely won’t have the data to train reliable ML models nor the means to deploy these models to production in a scalable and repeatable way. We half-jokingly call ourselves “recovering data scientists”, mainly from personal experience with being involved in premature data science projects without adequate data maturity or data engineering support.
+
+A data engineer should focus on the following in organizations getting started with data:
+
+. Get buy-in from key stakeholders, including executive management. Ideally, the data engineer should have a sponsor for critical initiatives to design and build a data architecture to support the company’s goals.
+
+. Define the right data architecture (usually solo, since a data architect likely isn’t available). This means determining business goals and the competitive advantage you’re aiming to achieve with your data initiative. Work toward a data architecture that supports these goals.
+
+. Identify and audit data that will support key initiatives and operate within the data architecture you designed.
+
+. Build a solid data foundation for future data analysts and data scientists to generate reports and models that provide competitive value. In the meantime, you may also have to generate these reports and models until this team is hired.
+
+This is a delicate stage with lots of pitfalls. Here are some tips for this stage:
+
+. Organizational willpower may wane if a lot of visible successes don’t occur with data. Getting quick wins will establish the importance of data within the organization. Just keep in mind that quick wins will likely create technical debt. Have a plan to reduce this debt, as it will otherwise add friction for future delivery.
+
+. Get out and talk to people, and avoid working in silos. We often see the data team working in a bubble, not communicating with people outside their departments and getting perspectives and feedback from business stakeholders. The danger is you’ll spend a lot of time working on things of little use to people.
+
+. Avoid undifferentiated heavy lifting. Don’t box yourself in with unnecessary technical complexity. Use off-the-shelf, turnkey solutions wherever possible.
+
+. Build custom solutions and code only where this creates a competitive advantage.
+
+
+Stage 2: Scaling with data
+At this point, a company has moved away from ad hoc data requests and has formal data practices. Now the challenge is creating scalable data architectures and planning for a future where the company is genuinely data-driven. Data engineering roles move from generalists to specialists, with people focusing on particular aspects of the data engineering lifecycle.
+
+In organizations that are in stage 2 of data maturity, a data engineer’s goals are to do the following:
+
+. Establish formal data practices
+
+. Create scalable and robust data architectures
+
+. Adopt DevOps and DataOps practices
+
+. Build systems that support ML
+
+. Continue to avoid undifferentiated heavy lifting and customize only when a competitive advantage results
+
+We return to each of these goals later in the book.
+
+Issues to watch out for include the following:
+
+. As we grow more sophisticated with data, there’s a temptation to adopt bleeding-edge technologies based on social proof from Silicon Valley companies. This is rarely a good use of your time and energy. Any technology decisions should be driven by the value they’ll deliver to your customers.
+
+. The main bottleneck for scaling is not cluster nodes, storage, or technology but the data engineering team. Focus on solutions that are simple to deploy and manage to expand your team’s throughput.
+
+. You’ll be tempted to frame yourself as a technologist, a data genius who can deliver magical products. Shift your focus instead to pragmatic leadership and begin transitioning to the next maturity stage; communicate with other teams about the practical utility of data. Teach the organization how to consume and leverage data.
+
+
+Stage 3: Leading with data
+At this stage, the company is data-driven. The automated pipelines and systems created by data engineers allow people within the company to do self-service analytics and ML. Introducing new data sources is seamless, and tangible value is derived. Data engineers implement proper controls and practices to ensure that data is always available to the people and systems. Data engineering roles continue to specialize more deeply than in stage 2.
+
+In organizations in stage 3 of data maturity, a data engineer will continue building on prior stages, plus they will do the following:
+
+. Create automation for the seamless introduction and usage of new data
+
+. Focus on building custom tools and systems that leverage data as a competitive advantage
+
+. Focus on the “enterprisey” aspects of data, such as data management (including data governance and quality) and DataOps
+
+. Deploy tools that expose and disseminate data throughout the organization, including data catalogs, data lineage tools, and metadata management systems
+
+. Collaborate efficiently with software engineers, ML engineers, analysts, and others
+
+. Create a community and environment where people can collaborate and speak openly, no matter their role or position
+
+Issues to watch out for include the following:
+
+. At this stage, complacency is a significant danger. Once organizations reach stage 3, they must constantly focus on maintenance and improvement or risk falling back to a lower stage.
+
+. Technology distractions are a more significant danger here than in the other stages. There’s a temptation to pursue expensive hobby projects that don’t deliver value to the business. Utilize custom-built technology only where it provides a competitive advantage.
+
+
+The Background and Skills of a Data Engineer
+
+Zooming out, a data engineer must also understand the requirements of data consumers (data analysts and data scientists) and the broader implications of data across the organization. Data engineering is a holistic practice; the best data engineers view their responsibilities through business and technical lenses.
+
+
+Business Responsibilities
+The macro responsibilities we list in this section aren’t exclusive to data engineers but are crucial for anyone working in a data or technology field. Because a simple Google search will yield tons of resources to learn about these areas, we will simply list them for brevity:
+
+Know how to communicate with nontechnical and technical people.
+Communication is key, and you need to be able to establish rapport and trust with people across the organization. We suggest paying close attention to organizational hierarchies, who reports to whom, how people interact, and which silos exist. These observations will be invaluable to your success.
+
+Understand how to scope and gather business and product requirements.
+You need to know what to build and ensure that your stakeholders agree with your assessment. In addition, develop a sense of how data and technology decisions impact the business.
+
+Understand the cultural foundations of Agile, DevOps, and DataOps.
+Many technologists mistakenly believe these practices are solved through technology. We feel this is dangerously wrong. Agile, DevOps, and DataOps are fundamentally cultural, requiring buy-in across the organization.
+
+Control costs.
+You’ll be successful when you can keep costs low while providing outsized value. Know how to optimize for time to value, the total cost of ownership, and opportunity cost. Learn to monitor costs to avoid surprises.
+
+Learn continuously.
+The data field feels like it’s changing at light speed. People who succeed in it are great at picking up new things while sharpening their fundamental knowledge. They’re also good at filtering, determining which new developments are most relevant to their work, which are still immature, and which are just fads. Stay abreast of the field and learn how to learn.
+
+A successful data engineer always zooms out to understand the big picture and how to achieve outsized value for the business. Communication is vital, both for technical and nontechnical people. We often see data teams succeed based on their communication with other stakeholders; success or failure is rarely a technology issue. Knowing how to navigate an organization, scope and gather requirements, control costs, and continuously learn will set you apart from the data engineers who rely solely on their technical abilities to carry their career.
+
+
+Technical Responsibilities
+
+You must understand how to build architectures that optimize performance and cost at a high level, using prepackaged or homegrown components. Ultimately, architectures and constituent technologies are building blocks to serve the data engineering lifecycle. Recall the stages of the data engineering lifecycle:
+
+. Generation
+
+. Storage
+
+. Ingestion - writing pipelines as code 
+
+. Transformation
+
+. Serving
+
+The undercurrents of the data engineering lifecycle are the following:
+
+. Security
+
+. Data management
+
+. DataOps
+
+. Data architecture
+
+. Orchestration
+
+. Software engineering - data engineers who can dive into the deep architectural details of a codebase give their companies an edge when specific technical needs arise. 
